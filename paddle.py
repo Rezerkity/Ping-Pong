@@ -15,12 +15,12 @@ class Paddle(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect()
 
-    def moveUp(self, pixels):
+    def moveup(self, pixels):
         self.rect.y -= pixels
         if self.rect.y < 0:
             self.rect.y = 0
 
-    def moveDown(self, pixels):
+    def movedown(self, pixels):
         self.rect.y += pixels
-        if self.rect.y > 400:
-            self.rect.y = 400
+        if self.rect.y > 420:
+            self.rect.y = 420
